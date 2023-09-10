@@ -16,9 +16,22 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
 
     public static void main(String a[]) {
-        ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
+
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+
+        // Obtiene una instancia de GrammarChecker del contexto de Spring
+        GrammarChecker grammarChecker = applicationContext.getBean(GrammarChecker.class);
+
+        // Realiza una verificación gramatical
+        String textToCheck = "This is a sample text to check.";
+        String result = grammarChecker.check(textToCheck);
+
+        // Imprime el resultado
+        System.out.println("Result: " + result);
+
+       /*ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
         GrammarChecker gc = ac.getBean(GrammarChecker.class);
-        System.out.println(gc.check("la la la "));
+        System.out.println(gc.check("la la la "));*/
     }
 
 }
