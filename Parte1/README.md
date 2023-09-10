@@ -120,6 +120,9 @@ public class SpanishSpellChecker implements SpellChecker {
 
 *Con estos cambios hacemos que englishSpeelChecker sea el candidato predeterminado a ser inyectado*
 
+![image](https://github.com/cattus09/ARSW_lab_4/assets/98556822/8e7db302-ef07-4f06-a952-b67ce976d848)
+
+
  
 5.	Haga un programa de prueba, donde se cree una instancia de GrammarChecker mediante Spring, y se haga uso de la misma:
 
