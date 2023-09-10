@@ -73,11 +73,53 @@ public class GrammarChecker {
 ```
 *La clase GrammarChecker está marcada con la anotación @Service, lo que indica que es un bean gestionado por Spring.*
 
-
 *El campo SpellChecker sc está marcado con la anotación @Autowired. Esto indica que Spring debe inyectar automáticamente una implementación de SpellChecker en este campo cuando se crea una instancia de GrammarChecker.*
 
 *
 	* EnglishSpellChecker y SpanishSpellChecker son los dos posibles candidatos a ser inyectados. Se debe seleccionar uno, u otro, mas NO ambos (habría conflicto de resolución de dependencias). Por ahora haga que se use EnglishSpellChecker.
+
+```
+package edu.eci.arsw.springdemo;
+
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Service;
+
+@Service
+public class EnglishSpellChecker implements SpellChecker {
+
+	@Override
+	public String checkSpell(String text) {		
+		return "Checked with english checker:"+text;
+	}
+
+        
+}
+
+```
+```
+package edu.eci.arsw.springdemo;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+import org.springframework.stereotype.Service;
+
+//@Service
+public class SpanishSpellChecker implements SpellChecker {
+
+	@Override
+	public String checkSpell(String text) {
+		return "revisando ("+text+") con el verificador de sintaxis del espanol";
+                
+                
+	}
+
+}
+
+```
+
+*Con estos cambios hacemos que englishSpeelChecker sea el candidato predeterminado a ser inyectado*
+
  
 5.	Haga un programa de prueba, donde se cree una instancia de GrammarChecker mediante Spring, y se haga uso de la misma:
 
