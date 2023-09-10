@@ -72,6 +72,8 @@ public class GrammarChecker {
 
 ```
 *La clase GrammarChecker está marcada con la anotación @Service, lo que indica que es un bean gestionado por Spring.*
+
+
 *El campo SpellChecker sc está marcado con la anotación @Autowired. Esto indica que Spring debe inyectar automáticamente una implementación de SpellChecker en este campo cuando se crea una instancia de GrammarChecker.*
 
 *
