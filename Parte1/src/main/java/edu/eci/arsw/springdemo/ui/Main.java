@@ -23,7 +23,7 @@ public class Main {
         GrammarChecker grammarChecker = applicationContext.getBean(GrammarChecker.class);
 
         // Realiza una verificación gramatical
-        String textToCheck = "This is a sample text to check.";
+        String textToCheck = "La La La";
         String result = grammarChecker.check(textToCheck);
 
         // Imprime el resultado
@@ -35,3 +35,4 @@ public class Main {
     }
 
 }
+

@@ -1,6 +1,6 @@
-edu/eci/arsw/springdemo/AppConfig.class
-edu/eci/arsw/springdemo/SpanishSpellChecker.class
-edu/eci/arsw/springdemo/SpellChecker.class
-edu/eci/arsw/springdemo/EnglishSpellChecker.class
-edu/eci/arsw/springdemo/ui/Main.class
-edu/eci/arsw/springdemo/GrammarChecker.class
+edu\eci\arsw\springdemo\SpanishSpellChecker.class
+edu\eci\arsw\springdemo\GrammarChecker.class
+edu\eci\arsw\springdemo\SpellChecker.class
+edu\eci\arsw\springdemo\AppConfig.class
+edu\eci\arsw\springdemo\ui\Main.class
+edu\eci\arsw\springdemo\EnglishSpellChecker.class
