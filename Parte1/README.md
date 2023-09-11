@@ -120,11 +120,11 @@ public class SpanishSpellChecker implements SpellChecker {
 
 *Con estos cambios hacemos que englishSpeelChecker sea el candidato predeterminado a ser inyectado*
 
-![image](https://github.com/cattus09/ARSW_lab_4/assets/98556822/8e7db302-ef07-4f06-a952-b67ce976d848)
+
 
 
  
-5.	Haga un programa de prueba, donde se cree una instancia de GrammarChecker mediante Spring, y se haga uso de la misma:
+4.	Haga un programa de prueba, donde se cree una instancia de GrammarChecker mediante Spring, y se haga uso de la misma:
 
 	```java
 	public static void main(String[] args) {
@@ -133,5 +133,8 @@ public class SpanishSpellChecker implements SpellChecker {
 		System.out.println(gc.check("la la la "));
 	}
 	```
-	
-6.	Modifique la configuración con anotaciones para que el Bean ‘GrammarChecker‘ ahora haga uso del  la clase SpanishSpellChecker (para que a GrammarChecker se le inyecte EnglishSpellChecker en lugar de  SpanishSpellChecker. Verifique el nuevo resultado.
+
+ ![image](https://github.com/cattus09/ARSW_lab_4/assets/98556822/8e7db302-ef07-4f06-a952-b67ce976d848)
+
+ 
+5.	Modifique la configuración con anotaciones para que el Bean ‘GrammarChecker‘ ahora haga uso del  la clase SpanishSpellChecker (para que a GrammarChecker se le inyecte EnglishSpellChecker en lugar de  SpanishSpellChecker. Verifique el nuevo resultado.
