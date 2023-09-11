@@ -168,4 +168,4 @@ public class AppConfig {
 }
 
 ```
-*Creamos una claase llamada AppConfig para definir los beans necesarios y establecemos cual sera el primario. con esto solo cambiamos la anotacion de english a spanish*
+*Creamos una claase llamada AppConfig para definir los beans necesarios y establecemos cual sera el primario. con esto solo cambiamos la anotacion @primary de english a spanish*
