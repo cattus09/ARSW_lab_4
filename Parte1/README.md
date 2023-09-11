@@ -138,3 +138,34 @@ public class SpanishSpellChecker implements SpellChecker {
 
  
 5.	Modifique la configuración con anotaciones para que el Bean ‘GrammarChecker‘ ahora haga uso del  la clase SpanishSpellChecker (para que a GrammarChecker se le inyecte EnglishSpellChecker en lugar de  SpanishSpellChecker. Verifique el nuevo resultado.
+
+
+```
+package edu.eci.arsw.springdemo;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
+
+@Configuration
+public class AppConfig {
+
+    @Bean
+    public GrammarChecker grammarChecker() {
+        return new GrammarChecker();
+    }
+    
+    @Bean
+    public SpellChecker englishSpellChecker() {
+        return new EnglishSpellChecker();
+    }
+
+    @Primary
+    @Bean
+    public SpellChecker spanishSpellChecker() {
+        return new SpanishSpellChecker();
+    }
+}
+
+```
+*Creamos una claase llamada AppConfig para definir los beans necesarios y establecemos cual sera el primario. con esto solo cambiamos la anotacion de english a spanish*
