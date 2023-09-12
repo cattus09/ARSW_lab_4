@@ -168,6 +168,6 @@ public class AppConfig {
 }
 
 ```
-*Creamos la clase llamada AppConfig para definir los beans necesarios y establecemos cual sera el primario. con esto solo cambiamos la anotacion @primary de english a spanish*
+*Creamos la clase llamada AppConfig para definir los beans necesarios y establecemos cual sera el primario. con esto solo cambiamos la anotacion @primary de english a español*
 
 ![image](https://github.com/cattus09/ARSW_lab_4/assets/98556822/8dc53d8f-0ad6-40dd-bd40-2694ab32b109)
