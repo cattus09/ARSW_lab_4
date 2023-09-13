@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="edu.eci.arsw.blueprints.test.persistence.impl.InMemoryPersistenceTest" time="0.05" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="edu.eci.arsw.blueprints.test.persistence.impl.InMemoryPersistenceTest" time="0.042" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.20+8"/>
@@ -61,6 +61,6 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="edu.eci.arsw.blueprints.test.persistence.impl.InMemoryPersistenceTest" name="saveExistingBpTest" time="0.05"/>
+  <testcase classname="edu.eci.arsw.blueprints.test.persistence.impl.InMemoryPersistenceTest" name="saveExistingBpTest" time="0.042"/>
   <testcase classname="edu.eci.arsw.blueprints.test.persistence.impl.InMemoryPersistenceTest" name="saveNewAndLoadTest" time="0"/>
 </testsuite>

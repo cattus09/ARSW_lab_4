@@ -44,8 +44,45 @@ En este ejercicio se va a construír un modelo de clases para la capa lógica de
 
 3. Haga un programa en el que cree (mediante Spring) una instancia de BlueprintServices, y rectifique la funcionalidad del mismo: registrar planos, consultar planos, registrar planos específicos, etc.
 
+	Creamos una clase Main, esta registra nuestros usuarios.
+
+	![](img/ARSW-LAB3 FOTO3.1.png)
+
+
+	Ejecutamos el programa para probar su correcto funcionamiento.
+
+	![](img/ARSW-LAB3 FOTO3.2.png)
+
+
 4. Se quiere que las operaciones de consulta de planos realicen un proceso de filtrado, antes de retornar los planos consultados. Dichos filtros lo que buscan es reducir el tamaño de los planos, removiendo datos redundantes o simplemente submuestrando, antes de retornarlos. Ajuste la aplicación (agregando las abstracciones e implementaciones que considere) para que a la clase BlueprintServices se le inyecte uno de dos posibles 'filtros' (o eventuales futuros filtros). No se contempla el uso de más de uno a la vez:
+
+	Creamos una clase de tipo interface en esta definimos lo metodos filter y filters, filters se encargara de recibir una lista y enviarsela a filter para  que este la pueda filtrar.
+
+	![](img/ARSW-LAB3 FOTO4.1.png)
+
 	* (A) Filtrado de redundancias: suprime del plano los puntos consecutivos que sean repetidos.
+
+		![](img/ARSW-LAB3 FOTO4.2.png)
+
 	* (B) Filtrado de submuestreo: suprime 1 de cada 2 puntos del plano, de manera intercalada.
 
+		![](img/ARSW-LAB3 FOTO4.3.png)
+
 5. Agrege las pruebas correspondientes a cada uno de estos filtros, y pruebe su funcionamiento en el programa de prueba, comprobando que sólo cambiando la posición de las anotaciones -sin cambiar nada más-, el programa retorne los planos filtrados de la manera (A) o de la manera (B). 
+
+	Prueba de filtrado de redundancia.
+
+	![](img/ARSW-LAB3 FOTO5.1.png)
+
+	Ejecucion de la prueba.
+
+	![](img/ARSW-LAB3 FOTO5.2.png)
+
+
+	Prueba de filtrado de submuestreo.
+
+	![](img/ARSW-LAB3 FOTO5.3.png)
+
+	Ejecucion de la prueba.
+
+	![](img/ARSW-LAB3 FOTO5.4.png)

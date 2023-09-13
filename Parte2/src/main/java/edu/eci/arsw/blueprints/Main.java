@@ -17,12 +17,18 @@ public class Main {
         Point[] pts0 = new Point[]{new Point(25, 15),new Point(15, 15)};
         Blueprint bp0 = new Blueprint("Sergio", "Edificio",pts0);
 
-        Blueprint bp1 = new Blueprint("Nicolas","Casa");
+        Blueprint bp1 = new Blueprint("Nicolas","Casa",pts0);
 
         bpServices.addNewBlueprint(bp0);
-        bpServices.addNewBlueprint(bp1);   
+        bpServices.addNewBlueprint(bp1); 
+        
+        for(Blueprint blueprint:bpServices.getAllBlueprints()){
+            System.out.println(blueprint.getAuthor());
+            System.out.println(blueprint.getName());
+        }
+
         //redundancyFiltering();
-        undersamplingFiltering();
+        //undersamplingFiltering();
     }
     
     public static void redundancyFiltering() throws BlueprintPersistenceException, BlueprintNotFoundException{
