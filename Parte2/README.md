@@ -21,8 +21,19 @@ En este ejercicio se va a construír un modelo de clases para la capa lógica de
 	Lo anterior requiere:
 
 	* Agregar las dependencias de Spring.
+
+![image](https://github.com/cattus09/ARSW_lab_4/assets/98556822/6fec972b-0d03-4fef-901c-9029416a2c62)
+
+
 	* Agregar la configuración de Spring.
+
+![image](https://github.com/cattus09/ARSW_lab_4/assets/98556822/31d85d43-b3c6-4813-ac01-b196391cb7f4)
+
+
+ 
 	* Configurar la aplicación -mediante anotaciones- para que el esquema de persistencia sea inyectado al momento de ser creado el bean 'BlueprintServices'.
+
+![image](https://github.com/cattus09/ARSW_lab_4/assets/98556822/444b6cba-3594-44ba-8e41-cabf99b03658)
 
 
 2. Complete los operaciones getBluePrint() y getBlueprintsByAuthor(). Implemente todo lo requerido de las capas inferiores (por ahora, el esquema de persistencia disponible 'InMemoryBlueprintPersistence') agregando las pruebas correspondientes en 'InMemoryPersistenceTest'.
